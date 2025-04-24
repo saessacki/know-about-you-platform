@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes  } from "react-router-dom"
 import Main from "./page/Main";
 import Test from "./page/Test"
 import TestResult from "./page/TestResult";
+import Privacy from './page/Privacy';
+import Blog from './page/Blog';
 
 export const base_url = "http://localhost:5173";
 
@@ -16,6 +18,14 @@ function App() {
           <Route path="/:testParam" element={<Test/>} />
           {/* Test Result Page */}
           <Route path="/:testParam/result/:resultParam" element={<TestResult/>} />
+          {/* Blog Page */}
+          <Route 
+            path="/blog/:testParam" element={<Blog />}
+          />
+          {/* Privacy Page */}
+          <Route 
+            path="/privacy" element={<Privacy />}
+          />
         </Routes>
       </BrowserRouter>
     </>

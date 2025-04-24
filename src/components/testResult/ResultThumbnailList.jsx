@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 function ResultThumbnailList({testParam}){
   const [testList, setTestList] = useState(TESTS);
-
+  
   return (
     <div>
       {testList

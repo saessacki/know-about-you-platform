@@ -1,6 +1,6 @@
 import { CircleFlag } from 'react-circle-flags';
 import { useNavigate } from 'react-router-dom';
-import styles from './languageicons.module.css';
+import styles from './languageIcons.module.css';
 
 function LanguageIcons(){
     const navigate = useNavigate();
