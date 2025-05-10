@@ -4,6 +4,7 @@ import Loading from './Loading';
 import Quiz from './Quiz';
 
 function IntroRenderer({ currentTest }){
+
   //MBTI 점수판
   const [mbtiScore, setMbtiScore] = useState({
     E: 0,
@@ -23,7 +24,7 @@ function IntroRenderer({ currentTest }){
   if(mode === 'intro'){
     return <Intro info={currentTest?.info} setMode={setMode}/>; 
   } else if (mode === 'quiz'){
-    return <Quiz 
+    return <Quiz
               questions={currentTest?.questions}
               mbtiScore={mbtiScore}
               setMbtiScore={setMbtiScore}

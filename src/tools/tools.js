@@ -1,3 +1,4 @@
+import ReactGA4 from "react-ga4";
 
 //선택 답안 셔플 함수
 export function arrayShuffler(array) {
@@ -25,5 +26,7 @@ export const eventSenderGA = (category, action, label) => {
   });
 };
 // category -> Paging, Submit, etc..
-// action: ex. Click Test STart button
+// action: ex. Click Test Start button
 // label: 어디에서? Intro, Result, etc...
+
+

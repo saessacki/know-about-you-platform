@@ -1,14 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import prerender from "@prerenderer/rollup-plugin";
-import PuppeteerRenderer from "@prerenderer/renderer-puppeteer";
+import fs from "fs";
+import path from "path";
+import { SitemapStream, streamToPromise } from "sitemap";
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [
-    react(),
-    prerender({
-      routes: [
+async function generateSitemap() {
+  const hostname = "https://testkoko.com";
+  const routes = [
         "/",
         "/attackOnTitanMBTI",
         "/attackOnTitanMBTIEng",
@@ -63,35 +59,24 @@ export default defineConfig({
         "/attackOnTitanMBTIJp/result/1qi2wn3et4rp", //INTP
         "/attackOnTitanMBTIJp/result/1qi2wn3ef4rj", //INFJ
         "/attackOnTitanMBTIJp/result/1qi2wn3ef4rp", //INFP
-      ],
-      renderer: PuppeteerRenderer,
-      server: {
-        port: 3000,
-        host: "localhost",
-      },
-      rendererOptions: {
-        maxConcurrentRoutes: 1,
-        renderAfterTime: 500, // 이 시간도 매우 크게 늘려봤으나 안됨...
-      },
-      rendererConfig: {
-        // --- 여기가 핵심입니다 ---
-        // puppeteer.launch() 함수에 직접 전달되는 옵션들입니다.
+  ];
 
-        // 프로토콜 타임아웃 늘리기 (단위: 밀리초)
-        // 기본값은 30000 (30초)입니다.
-        protocolTimeout: 600000, // 60초로 설정, 필요시 더 늘리세요
+  const sitemapStream = new SitemapStream({ hostname });
 
-        // `protocolTimeout`만으로 해결되지 않으면 다른 타임아웃도 고려해볼 수 있습니다:
-        timeout: 600000, // Puppeteer 작업 전반에 대한 일반적인 시간 제한
-      },
-      postProcess(renderedRoute) {
-        renderedRoute.html = renderedRoute.html
-          .replace(/http:/i, "https:")
-          .replace(
-            /(https:\/\/)?(localhost|127\.0\.0\.1):\d*/i,
-            "https://testkoko.com/"
-          );
-      },
-    }),
-   ],
-})
+  for (const route of routes) {
+    sitemapStream.write({
+      url: route,
+      changefreq: "weekly",
+      priority: 0.8,
+    });
+  }
+  sitemapStream.end();
+
+  const sitemap = await streamToPromise(sitemapStream);
+  const __dirname = path.dirname(new URL(import.meta.url).pathname);
+  const outputPath = path.join(__dirname, "dist", "sitemap.xml");
+  fs.writeFileSync(outputPath, sitemap.toString());
+  console.log("sitemap.xml generated!");
+}
+
+generateSitemap();

@@ -1,7 +1,7 @@
-// BRAND_NAME
-// COMPANY_NAME
-// DOMAIN_NAME
-// EMAIL_ADDRESS
+// TESTKOKO-PLATFORM
+// SaessackBori
+// omg-test.com
+// songk11956@gmail.com
 import React from "react";
 
 const Privacy = () => {
@@ -9,23 +9,23 @@ const Privacy = () => {
     <div style={{ margin: "0 2.5em" }}>
       <h1 style={{ width: "10rem", margin: "1rem auto" }}>Privacy Policy</h1>
       <p>
-        BRAND_NAME by COMPANY_NAME is committed to protecting the privacy of
+        TESTKOKO-PLATFORM by SaessackBori is committed to protecting the privacy of
         visitors to our website, subscribers to our newsletters, and those
-        providing contact information. In addition, BRAND_NAME is opposed to
+        providing contact information. In addition, TESTKOKO-PLATFORM is opposed to
         unauthorized commercial e-mail delivery, otherwise known as spam. Please
         read the following Privacy and Spam Policy to understand how your
-        personal information is treated. From time to time, BRAND_NAME may offer
+        personal information is treated. From time to time, TESTKOKO-PLATFORM may offer
         new information or services that may affect this policy. If you have any
         questions or concerns regarding this Privacy and Spam Policy, please
-        send an e-mail to EMAIL_ADDRESS. Spam abuses can be notified at
-        EMAIL_ADDRESS.
+        send an e-mail to songk11956@gmail.com. Spam abuses can be notified at
+        songk11956@gmail.com.
         <br />
         <br />
-        The following privacy policy (“Privacy Policy”) sets forth BRAND_NAME’s
+        The following privacy policy (“Privacy Policy”) sets forth TESTKOKO-PLATFORM’s
         policy with respect to information, including personally identifiable
-        data (“Personal Data”) and other information, BRAND_NAME collects from
-        visitors to the BRAND_NAME website located at DOMAIN_NAME (the
-        “Website”) and relevant product subdomains. BRAND_NAME, the owner and
+        data (“Personal Data”) and other information, TESTKOKO-PLATFORM collects from
+        visitors to the TESTKOKO-PLATFORM website located at omg-test.com (the
+        “Website”) and relevant product subdomains. TESTKOKO-PLATFORM, the owner and
         operator of the Website, is a corporation formed under the laws of
         California, United States.
         <br />
@@ -56,7 +56,7 @@ const Privacy = () => {
         use of it in accordance with this Privacy Policy. If you provide
         Personal Data to us, you acknowledge and agree that such Personal Data
         may be transferred and stored from your current location to the offices
-        and servers of BRAND_NAME and the authorized third parties referenced
+        and servers of TESTKOKO-PLATFORM and the authorized third parties referenced
         below.
         <br />
         <br />
@@ -69,15 +69,15 @@ const Privacy = () => {
         <br />
         <b>Automatically-Collected Information:</b> We automatically collect
         certain information about you and the device with which you access
-        BRAND_NAME. For example, when you use BRAND_NAME, we will log your IP
+        TESTKOKO-PLATFORM. For example, when you use TESTKOKO-PLATFORM, we will log your IP
         address, operating system type, browser type, referring website, pages
         you viewed, and the dates/times when you accessed the website. We may
-        also collect information about actions you take when using BRAND_NAME,
+        also collect information about actions you take when using TESTKOKO-PLATFORM,
         such as links clicked.
         <br />
         <br />
         <b>Cookies:</b> We may log information using cookies, which are small
-        data files stored on your browser by BRAND_NAME. We may use both session
+        data files stored on your browser by TESTKOKO-PLATFORM. We may use both session
         cookies, which expire when you close your browser, and persistent
         cookies, which stay on your browser until deleted, to provide you with a
         more personalized experience on the website. For more information about
@@ -86,7 +86,7 @@ const Privacy = () => {
       <br />
       <br />
       <h3>HOW YOUR PERSONAL INFORMATION MAY BE USED</h3>
-      BRAND_NAME, and our subsidiaries and affiliates (the “Related Companies”),
+      TESTKOKO-PLATFORM, and our subsidiaries and affiliates (the “Related Companies”),
       may use your personal information in the following ways:
       <br />
       <br />
@@ -109,7 +109,7 @@ const Privacy = () => {
         <li>To respond to your comments or inquiries;</li>
         <li>To provide you with user support;</li>
         <li>To track and measure website performance;</li>
-        <li>To process payment for purchases you make through BRAND_NAME;</li>
+        <li>To process payment for purchases you make through TESTKOKO-PLATFORM;</li>
         <li>
           To protect, investigate, and deter against unauthorized or illegal
           activity;
@@ -146,7 +146,7 @@ const Privacy = () => {
           have your consent or are otherwise required or permitted to by law).
           You can obtain further information about how we assess our legitimate
           interests against any potential impact on you in respect of specific
-          activities by contacting us at EMAIL_ADDRESS.
+          activities by contacting us at songk11956@gmail.com.
         </li>
         <li>
           <i>Performance of Contract</i> means processing your data where it is
@@ -164,8 +164,8 @@ const Privacy = () => {
         </li>
       </ul>
       <br />
-      <h3>DOES BRAND_NAME SHARE MY INFORMATION?</h3>
-      BRAND_NAME will not share, rent, or sell your personally identifiable
+      <h3>DOES TESTKOKO-PLATFORM SHARE MY INFORMATION?</h3>
+      TESTKOKO-PLATFORM will not share, rent, or sell your personally identifiable
       information with third-parties. We may, however, share your information
       with third-parties when we are authorized to share such information.
       <br />
@@ -190,7 +190,7 @@ const Privacy = () => {
       third parties to whom you ask us to send your information.
       <br />
       <br />
-      <b>Agents, Consultants, and Related Third Parties:</b> BRAND_NAME, like
+      <b>Agents, Consultants, and Related Third Parties:</b> TESTKOKO-PLATFORM, like
       many businesses, sometimes hires other companies to perform certain
       business-related functions. Examples of such functions include mailing
       information, maintaining databases and processing payments. When we employ
@@ -198,7 +198,7 @@ const Privacy = () => {
       with the information that they need to perform their specific function.
       <br />
       <br />
-      <b>Legal Requirements:</b> BRAND_NAME may disclose your Personal Data if
+      <b>Legal Requirements:</b> TESTKOKO-PLATFORM may disclose your Personal Data if
       required to do so by law or in the good faith belief that such action is
       necessary to (i) comply with a legal obligation or to respond to requests
       from law enforcement or other government officials relating to
@@ -206,20 +206,20 @@ const Privacy = () => {
       investigation of suspected or actual illegal activity, in which case we
       may (and you hereby authorize us to) disclose information without
       subpoenas or warrants served on us, (ii) protect and defend the rights or
-      property of BRAND_NAME, (iii) act in urgent circumstances to protect the
+      property of TESTKOKO-PLATFORM, (iii) act in urgent circumstances to protect the
       personal safety of users of the Website or the public, (iv) protect
       against legal liability including to resolve disputes, investigate
       problems, or enforce our Customer contracts.
       <br />
       <br />
-      <b>Third Party Vendors:</b> Additionally, BRAND_NAME may use third-party
+      <b>Third Party Vendors:</b> Additionally, TESTKOKO-PLATFORM may use third-party
       service providers to service various aspects of the website. Each
       third-party service provider’s use of your personal information is
-      dictated by their respective privacy policy. BRAND_NAME currently uses the
+      dictated by their respective privacy policy. TESTKOKO-PLATFORM currently uses the
       following third-party service providers:
       <br />
       <br />
-      <b>Tracking:</b> BRAND_NAME uses various marketing tools that help us
+      <b>Tracking:</b> TESTKOKO-PLATFORM uses various marketing tools that help us
       create a better user experience for people visiting our site. These tools
       allow us to look at aggregated data such as scrolling patterns, clicks,
       and allow us to run tests to determine which pages result in the best
@@ -262,12 +262,12 @@ const Privacy = () => {
       and how to properly install the browser add-on here.
       <br />
       <br />
-      <b>Remarketing:</b> BRAND_NAME uses remarketing tracking cookies and
+      <b>Remarketing:</b> TESTKOKO-PLATFORM uses remarketing tracking cookies and
       conversion pixels from vendors such as Google and Facebook to present
       special offers to you for our products or services over the Google Content
       Network and via social networks. This means you may see an ad for one of
       our products or services as a result of visiting our website. In addition,
-      BRAND_NAME uses custom audiences based on e-mails and phone numbers of
+      TESTKOKO-PLATFORM uses custom audiences based on e-mails and phone numbers of
       subscribers and customers. This allows us to present special offers for
       our products and services to you via Facebook and Google. However, your
       personally identifiable information is not used by any remarketing service
@@ -281,7 +281,7 @@ const Privacy = () => {
       Google: Opt-out of Google remarketing here
       <br />
       <br />
-      <b>Newsletters:</b> BRAND_NAME uses Drip as its e-mail service provider.
+      <b>Newsletters:</b> TESTKOKO-PLATFORM uses Drip as its e-mail service provider.
       Through Drip, we collect contact information, distribute our newsletter,
       and track actions you take that assist us in measuring the performance of
       the website and newsletters. Upon subscription, we also track the pages
@@ -309,7 +309,7 @@ const Privacy = () => {
       Sparkloop’s privacy policy here.
       <br />
       <br />
-      <b>Social Media Marketing World:</b> BRAND_NAME hosts an annual
+      <b>Social Media Marketing World:</b> TESTKOKO-PLATFORM hosts an annual
       conference, Social Media Marketing World. If you purchase tickets for
       Social Media Marketing World, you will enter personal data into our system
       for processing this transaction. Your payment will be processed by one of
@@ -325,7 +325,7 @@ const Privacy = () => {
       badge, you will be transmitting your name, company, and email address.
       <br />
       <br />
-      <b>Online Courses, Workshops, Seminars, and Summits:</b> BRAND_NAME hosts
+      <b>Online Courses, Workshops, Seminars, and Summits:</b> TESTKOKO-PLATFORM hosts
       regular online events (“Summits”). If you purchase tickets for one of
       these Summits, you will enter personal data into our system for processing
       this transaction. Your payment will be processed by one of our payment
@@ -336,7 +336,7 @@ const Privacy = () => {
       information on their servers.You may access Drip’s privacy policy here.
       <br />
       <br />
-      <b>Social Media Marketing Society:</b> BRAND_NAME hosts a paid membership
+      <b>Social Media Marketing Society:</b> TESTKOKO-PLATFORM hosts a paid membership
       site, the Social Media Marketing Society. If you purchase a membership in
       the Social Media Marketing Society, your purchase will be processed
       through one of our payment processors, as described above. Additionally,
@@ -347,7 +347,7 @@ const Privacy = () => {
       their servers. You may access Drip’s privacy policy here.
       <br />
       <br />
-      <b>Becoming Well-Known course:</b> BRAND_NAME hosts an online course,
+      <b>Becoming Well-Known course:</b> TESTKOKO-PLATFORM hosts an online course,
       Becoming Well-Known. If you purchase access, you will enter personal data
       for processing this transaction. Your payment will be processed by Stripe
       or PayPal, as described above. Emails regarding your purchase may be
@@ -365,7 +365,7 @@ const Privacy = () => {
       Survey Monkey privacy policy.
       <br />
       <br />
-      <b>Webinars:</b> From time to time, BRAND_NAME or the Social Media
+      <b>Webinars:</b> From time to time, TESTKOKO-PLATFORM or the Social Media
       Marketing Society will host webinars, which may be hosted through
       GoToWebinar. If you elect to participate in a webinar, you will be
       required to submit personal information to register and login. You may
@@ -381,7 +381,7 @@ const Privacy = () => {
       <br />
       <br />
       <b>Contact Information and Website Support:</b> We offer multiple ways to
-      contact BRAND_NAME, including contact forms, e-mails, and chat. If at any
+      contact TESTKOKO-PLATFORM, including contact forms, e-mails, and chat. If at any
       time, you attempt to contact us through a contact form, the information
       you provide will be stored on our servers. If you submit a form or email
       us, we use FreshDesk to process all these inquiries and track responses.
@@ -392,7 +392,7 @@ const Privacy = () => {
       the FreshDesk privacy policy.
       <br />
       <br />
-      <b>Comments:</b> BRAND_NAME uses Disqus to make it easy for you to leave
+      <b>Comments:</b> TESTKOKO-PLATFORM uses Disqus to make it easy for you to leave
       comments on blog posts. Personal information that you enter for comments
       will be stored on the Disqus servers, in accordance with the Disqus
       privacy policy.
@@ -400,13 +400,13 @@ const Privacy = () => {
       <br />
       At this time, your personal information is not shared with any other
       third-party applications. This list may be amended from time to time at
-      BRAND_NAME’s sole discretion.
+      TESTKOKO-PLATFORM’s sole discretion.
       <br />
       <br />
       Except when required by law, we will not sell, distribute, or reveal your
       e-mail address(es) or other personal information without your consent;
       however, we may disclose or transfer personal information collected
-      through BRAND_NAME to third-parties who acquire all or a portion of our
+      through TESTKOKO-PLATFORM to third-parties who acquire all or a portion of our
       business, which may be the result of a merger, consolidation, or purchase
       of all or a portion of our assets, or in connection with any bankruptcy or
       reorganization proceeding brought by or against us.
@@ -423,20 +423,20 @@ const Privacy = () => {
       visitors’ Internet service providers. It is important to note that no
       Personal Data is available or used in this process. Aggregated Personal
       Data: In an ongoing effort to better understand and serve the users of the
-      Sites, BRAND_NAME may conduct research on its customer demographics,
+      Sites, TESTKOKO-PLATFORM may conduct research on its customer demographics,
       interests and behavior based on the Personal Data and other information
       provided to us. This research may be compiled and analyzed on an aggregate
       basis, and we may share this aggregate data with our affiliates, agents
       and business partners. This aggregate information does not identify you
-      personally. BRAND_NAME may also disclose aggregated user statistics in
+      personally. TESTKOKO-PLATFORM may also disclose aggregated user statistics in
       order to describe our services to current and prospective business
       partners, and to other third parties for other lawful purposes.
       <h3>PUBLICLY VISIBLE INFORMATION</h3>
-      If you create a user profile on BRAND_NAME or the Social Media Marketing
-      Society or leave a comment on BRAND_NAME, certain information may be
+      If you create a user profile on TESTKOKO-PLATFORM or the Social Media Marketing
+      Society or leave a comment on TESTKOKO-PLATFORM, certain information may be
       publicly visible.
       <h4>COOKIES</h4>
-      BRAND_NAME uses cookies to: store visitors’ preferences; record
+      TESTKOKO-PLATFORM uses cookies to: store visitors’ preferences; record
       user-specific information on what pages users access or visit; ensure that
       visitors are not repeatedly sent the same banner ads; or customize our
       content based on visitors’ browser type or other information that the
@@ -565,10 +565,10 @@ const Privacy = () => {
       <h5>FURTHER INFORMATION AND CONTACT DETAILS</h5>
       If you have any questions about or if you would like more information on
       the Cookies that we use and their purposes, please contact us at
-      EMAIL_ADDRESS.
+      songk11956@gmail.com.
       <h3>WHAT IF THERE ARE CHANGES TO THIS PRIVACY AND SPAM POLICY?</h3>
       If we change our Privacy and Spam Policy, we will post those changes on
-      our privacy page at DOMAIN_NAMEprivacy.
+      our privacy page at omg-test.comprivacy.
       <h3>RIGHTS RELATED TO YOUR PERSONAL DATA</h3>
       Under laws in certain countries in which we operate, customers and other
       visitors to our Website from those countries have a right to access
@@ -600,18 +600,18 @@ const Privacy = () => {
       those disclosures. We may retain your Personal Data to comply with laws,
       prevent fraud, resolve disputes, troubleshoot problems, assist with any
       investigations, enforce our contracts, and take other actions otherwise
-      permitted by law. Please contact us at EMAIL_ADDRESS to submit a request
+      permitted by law. Please contact us at songk11956@gmail.com to submit a request
       or obtain information regarding any of the above.
       <b>Opt-out:</b> You may opt-out of future e-mail communications by
       following the unsubscribe links in our e-mails. You may also notify us at
-      EMAIL_ADDRESS to be removed from our mailing list.
+      songk11956@gmail.com to be removed from our mailing list.
       <b>Access:</b> You may access the personal information we have about you
-      by submitting a request to EMAIL_ADDRESS.
-      <b>Amend: </b>You may contact us at EMAIL_ADDRESS to amend or update your
+      by submitting a request to songk11956@gmail.com.
+      <b>Amend: </b>You may contact us at songk11956@gmail.com to amend or update your
       personal information.
       <b>Forget:</b> In certain situations, you may request that we erase or
       forget your personal data. To do so, please submit a request to
-      EMAIL_ADDRESS. California Residents: Pursuant to the California Consumer
+      songk11956@gmail.com. California Residents: Pursuant to the California Consumer
       Privacy Act of 2019 (“CCPA”), you have the right to request disclosure of
       our data collection and sales practices in connection with our data
       collection of your Personal Data. You may also request the categories of
@@ -626,7 +626,7 @@ const Privacy = () => {
       parties. In the event you make such a request, we reserve the right to
       collect information from you to verify your identity and right to request
       such information. All requests made pursuant to the CCPA shall be made to
-      EMAIL_ADDRESS or to BRAND_NAME, 13025 Danielson Street, Poway, CA 92064.
+      songk11956@gmail.com or to TESTKOKO-PLATFORM, 13025 Danielson Street, Poway, CA 92064.
       We will respond to all requests within forty-five (45) days of our receipt
       of the request, unless we inform you of our need for an extension to the
       request. We will not discriminate against you for exercising any of your
@@ -639,22 +639,22 @@ const Privacy = () => {
       trade union memberships. If you elect to submit such information to us, it
       will be subject to this Privacy and Spam Policy.
       <h3>CHILDREN’S INFORMATION</h3>
-      BRAND_NAME does not knowingly collect any personally identifiable
+      TESTKOKO-PLATFORM does not knowingly collect any personally identifiable
       information from children under the age of 16. If you are under the age of
       16, please do not submit any Personal Data through the Website. We
       encourage parents and legal guardians to monitor their children’s Internet
       usage and to help enforce our Privacy Policy by instructing their children
       never to provide Personal Data on the Website without their permission. If
-      a parent or guardian believes that BRAND_NAME has personally identifiable
+      a parent or guardian believes that TESTKOKO-PLATFORM has personally identifiable
       information of a child under the age of 16 in its database, please contact
-      us immediately at EMAIL_ADDRESS and we will use our best efforts to
+      us immediately at songk11956@gmail.com and we will use our best efforts to
       promptly remove such information from our records.
       <h3>SPAM POLICY</h3>
-      BRAND_NAME is strongly opposed to spam. We will only send e-mail to users
-      that have explicitly requested to receive an e-mail from BRAND_NAME.
+      TESTKOKO-PLATFORM is strongly opposed to spam. We will only send e-mail to users
+      that have explicitly requested to receive an e-mail from TESTKOKO-PLATFORM.
       Examples may include:
       <ul>
-        <li>Opt-in subscribers to the BRAND_NAME Newsletter</li>
+        <li>Opt-in subscribers to the TESTKOKO-PLATFORM Newsletter</li>
         <li>Users that complete a contact form</li>
         <li>
           All communication will be related and relevant to what you have
@@ -662,12 +662,12 @@ const Privacy = () => {
         </li>
       </ul>
       <h3>WEB LINKS</h3>
-      BRAND_NAME contains links to other sites. Please be aware that BRAND_NAME
+      TESTKOKO-PLATFORM contains links to other sites. Please be aware that TESTKOKO-PLATFORM
       is not responsible for the privacy practices or the content of such other
       sites. We encourage our users to be aware when they leave our site to read
       the privacy and spam policies of each and every website that collects
       personally identifiable information. This Privacy and Spam Policy applies
-      solely to information collected by BRAND_NAME.
+      solely to information collected by TESTKOKO-PLATFORM.
       <h3>EMAIL COMMUNICATIONS</h3>
       If you send us an email with questions or comments, we may use your
       personally identifiable information to respond to your questions or
@@ -679,13 +679,13 @@ const Privacy = () => {
       included at the bottom of most emails we send, or as provided below;
       provided, however, we reserve the right to send you transactional emails
       such as customer service communications.
-      <h3>HOW DO I CONTACT BRAND_NAME?</h3>
-      If you have any further questions or comments regarding the BRAND_NAME
-      website or this Privacy and Spam Policy, you may contact EMAIL_ADDRESS.
+      <h3>HOW DO I CONTACT TESTKOKO-PLATFORM?</h3>
+      If you have any further questions or comments regarding the TESTKOKO-PLATFORM
+      website or this Privacy and Spam Policy, you may contact songk11956@gmail.com.
       <h3>OTHER TERMS AND CONDITIONS</h3>
       Your access to and use of the Website may also be subject to any separate
       agreements or terms and conditions you have signed or agreed to with
-      BRAND_NAME. Please refer to those agreements as needed. Regardless of any
+      TESTKOKO-PLATFORM. Please refer to those agreements as needed. Regardless of any
       other provision in this Privacy Policy, we reserve the right to disclose
       any personally identifiable or non-personally identifiable information
       about you to: (a) fulfill a government request; (b) conform with the
@@ -694,7 +694,7 @@ const Privacy = () => {
       emergency, the health and safety of our customers or the general public.
       This includes exchanging information with third parties and organizations
       in connection with credit risk reduction and fraud protection.
-      <h3>CHANGES TO BRAND_NAME’S PRIVACY POLICY</h3>
+      <h3>CHANGES TO TESTKOKO-PLATFORM’S PRIVACY POLICY</h3>
       The Website may change from time to time. As a result, at times it may be
       necessary for us to make changes to this Privacy Policy. At minimum, we
       will update this Privacy Policy once per year. We reserve the right to

@@ -2,12 +2,13 @@ import { useNavigate, useParams } from 'react-router-dom';
 import IntroRenderer from '../components/test/IntroRenderer';
 import { TESTS } from "../data/TESTS";
 import { useEffect, useState } from 'react';
+import IntroMetatagRenderer from "../components/metatagRenderer/IntroMetatagRenderer";
 
 function Test(){
     const {testParam} = useParams(); //동적 파라미터 
     const [currentTest, setCurrentTest] = useState({});
     const navigate = useNavigate();
-
+    
     useEffect(()=>{
         //1. testParam이 우리 DB에 존재하는가 필터링
         //1-1 존재 X : alert로 안내 후 Home으로 라우팅
@@ -22,6 +23,7 @@ function Test(){
 
     return (
         <div>
+            <IntroMetatagRenderer currentTest={currentTest}/>
             <IntroRenderer currentTest={currentTest}/>
         </div>
     )

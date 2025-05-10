@@ -1,16 +1,35 @@
-import { BrowserRouter, Route, Routes  } from "react-router-dom"
+import { BrowserRouter, Route, Routes  } from "react-router-dom";
 import Main from "./page/Main";
-import Test from "./page/Test"
+import Test from "./page/Test";
 import TestResult from "./page/TestResult";
 import Privacy from './page/Privacy';
 import Blog from './page/Blog';
+import { useEffect } from 'react';
+import ReactGA4 from 'react-ga4';
+import ScrollToTop from './utils/ScrollToTop';
 
-export const base_url = "http://localhost:5173";
+export const base_url = "https://testkoko.com";
+//export const base_url = "http://localhost:5173";
+
 
 function App() {
+
+  useEffect(()=>{
+    ReactGA4.initialize(
+      [
+        {
+          trackingId : "G-WHCMJFLWFP",
+          gaOptions: {
+            siteSpeedSampleRate: 100
+          }
+        }
+      ]
+    )
+  },[])
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           {/* Main Thumbnail List Page */}
           <Route path="/" element={<Main/>} />
@@ -41,3 +60,11 @@ export default App
 
 //Dynamic Routing : 동적 라우팅
 // /:testParam
+
+/**
+ * [GA]
+ * - Test Start Button(Intro)
+ * - Copy Test Link Button(Intro, Result)
+ * - Go-to-another Test Button(Result)
+ * - Go-to-Other Tests Button(Intro, Result)
+ */

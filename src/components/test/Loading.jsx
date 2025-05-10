@@ -40,11 +40,9 @@ function Loading({mbtiScore, currentTest}) {
         resultType += secondType
       )
     }
-    console.log("resultType",resultType);
     const resultQuery = currentTest?.results?.find((result)=>(
       result?.type === resultType
     ))?.query;
-    console.log('resultQuery',resultQuery);
     setFinalQuery(resultQuery);
   },[mbtiScore, currentTest])
 
@@ -68,6 +66,7 @@ function Loading({mbtiScore, currentTest}) {
             height={250}
             width={250}
             style={{marginTop : "10rem"}}
+            isClickToPauseDisabled={true} // 이 속성이 클릭 시 멈춤을 방지함
           />;
 }
 
@@ -76,4 +75,4 @@ export default Loading;
 // Loading Animation
 // mbtiScore Calculate -> Result MBTI Type ex. "ENFP"
 // N초 후 -> Result Page Routing
-// base_url/personalColor/result/ENFJ
+// base_url/attackOfTitanMBTI/result/ENFJ

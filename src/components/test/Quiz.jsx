@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react'
 import styles from "./quiz.module.css";
 import { Progress } from 'antd';
@@ -8,15 +9,12 @@ function Quiz({setMode, questions, mbtiScore, setMbtiScore}) {
   const [questionNum, setQuestionNum] = useState(0);
   const onOptionClick = (type) => {
      //mbtiScore[type] = mbtiScore[type] + 1;
-    console.log("type",type);
     mbtiScore[type] += 1; //점수판 업데이트
     setMbtiScore({...mbtiScore}); //불변성으로 인한 구조분해 할당 이용
     setQuestionNum((prev) => prev + 1);
   }
   
   useEffect(()=>{
-    console.log("questionNum", questionNum);
-    console.log("questions.length", questions.length);
     if(questionNum === questions.length){
       setMode("loading");
     }
@@ -25,7 +23,12 @@ function Quiz({setMode, questions, mbtiScore, setMbtiScore}) {
   return (
     <div>
       <h3 className={styles.questionText}>
-        {questions[questionNum]?.question}
+        {questions[questionNum]?.question.split('\n').map((line, index) => (
+          <React.Fragment key={index}>
+            {line}
+            <br />
+          </React.Fragment>
+        ))}
       </h3>
       {questions[questionNum]?.answers && arrayShuffler(questions[questionNum]?.answers)?.map((option) => (
         <button
@@ -33,7 +36,12 @@ function Quiz({setMode, questions, mbtiScore, setMbtiScore}) {
           onClick={() => onOptionClick(option.type)}
           key={option.content}
         >
-          {option.content}
+          {option.content.split('\n').map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
         </button>
       ))}
       <Progress 

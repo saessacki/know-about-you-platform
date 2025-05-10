@@ -5,6 +5,10 @@ import ShareButtonGroup from '../components/testResult/ShareButtonGroup';
 import ResultButtonGroup from '../components/testResult/ResultButtonGroup';
 import ResultThumbnailList from '../components/testResult/ResultThumbnailList';
 import {TESTS} from '../data/TESTS.js';
+import GoToHomeButton from '../components/test/GoToHomeButton.jsx';
+import BlogButton from '../components/testResult/BlogButton.jsx';
+import TestResultMetatagRenderer from '../components/metatagRenderer/TestResultMetatagRenderer.jsx';
+import CoupangDynamicBanner from '../components/CoupangDynamicBanner.jsx';
 
 function TestResult(){
     const navigate = useNavigate();
@@ -21,7 +25,6 @@ function TestResult(){
         
         setRenderTestInfo(testInfo);
 
-        console.log(testInfo);
         const resultInfo = testInfo?.results?.find((result)=>(
             result.query === resultParam
         ))
@@ -29,22 +32,38 @@ function TestResult(){
             alert("존재하지 않는 결과값입니다!");
             navigate(`/${testInfo?.info?.mainUrl}`);
         }
-        console.log('resultInfo',resultInfo);
         setRenderResultInfo(resultInfo);
     },[testParam, resultParam]);
     return (
         <div>
-            <TestResultRenderer renderResultInfo={renderResultInfo}/>
-            <ShareButtonGroup
+            <TestResultMetatagRenderer 
                 testParam={testParam}
                 resultParam={resultParam}
                 renderTestInfo={renderTestInfo}
             />
+            <TestResultRenderer
+                renderResultInfo={renderResultInfo}
+                lang={renderTestInfo?.info?.lang}
+            />
+            <ShareButtonGroup
+                testParam={testParam}
+                resultParam={resultParam}
+                renderTestInfo={renderTestInfo}
+                lang={renderTestInfo?.info?.lang}
+            />
+            <CoupangDynamicBanner unit={"resultBanner"}/>
+            <BlogButton
+                testParam={testParam}
+                lang={renderTestInfo?.info?.lang}
+            />
             <ResultButtonGroup
                 testParam={testParam}
                 resultParam={resultParam}
+                renderTestInfo={renderTestInfo}
+                lang={renderTestInfo?.info?.lang}
             />
-            <ResultThumbnailList />
+            <ResultThumbnailList testParam={testParam}/>
+            <GoToHomeButton page="Result"/>
         </div>
     );
 }

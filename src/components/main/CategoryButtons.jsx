@@ -1,10 +1,28 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
+import styles from './categoryButtons.module.css';
 
 function CategoryButtons(){
     const [searchParams] = useSearchParams();
     const [language, setLanguage] = useState('Kor');
     const navigate = useNavigate();
+    const foreignTextsObject = {
+        Kor : {
+            all : "전체",
+            love : "연애",
+            characteristic: "성격",
+        },
+        Eng : {
+            all : "All",
+            love : "Love",
+            characteristic: "Personality",
+        },
+        Jp : {
+            all : "すべて",
+            love : "れんあい",
+            characteristic: "せいかく",
+        },
+    }
 
     useEffect(() => {
         const currentLang = searchParams.get('lang') || 'Kor';
@@ -26,11 +44,11 @@ function CategoryButtons(){
     return (
         <div>
             {/* mbti.com | mbti.com/?lang=Eng */}
-            <button onClick={()=> onCategoryButtonClick("all")}>전체</button>
+            <button className={styles.categoryButton} onClick={()=> onCategoryButtonClick("all")}>{foreignTextsObject[language].all}</button>
             {/* mbti.com | mbti.com/?lang=Eng&cat=love */}
-            <button onClick={()=> onCategoryButtonClick("love")}>연애</button>
+            <button className={styles.categoryButton} onClick={()=> onCategoryButtonClick("love")}>{foreignTextsObject[language].love}</button>
             {/* mbti.com | mbti.com/?lang=Eng&cat=characteristic */}
-            <button onClick={()=> onCategoryButtonClick("characteristic")}>성격</button>
+            <button className={styles.categoryButton} onClick={()=> onCategoryButtonClick("characteristic")}>{foreignTextsObject[language].characteristic}</button>
         </div>
     );
 }
