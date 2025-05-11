@@ -1,5 +1,5 @@
 .questionText{
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .optionButton{
@@ -8,7 +8,7 @@
   margin: 1rem auto;
   height: 8rem;
   border-radius: 0.5rem;
-  font-size: 1.3rem;
-  border: 2px solid brown;
+  font-size: 1.2rem;
+  border: 4px solid skyblue;
   background-color: white;
 }

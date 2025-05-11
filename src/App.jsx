@@ -8,8 +8,8 @@ import { useEffect } from 'react';
 import ReactGA4 from 'react-ga4';
 import ScrollToTop from './utils/ScrollToTop';
 
-export const base_url = "https://testkoko.com";
-//export const base_url = "http://localhost:5173";
+//export const base_url = "https://testkoko.com";
+export const base_url = "http://localhost:5173";
 
 
 function App() {
