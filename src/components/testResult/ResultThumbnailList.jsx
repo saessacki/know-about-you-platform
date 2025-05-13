@@ -14,7 +14,7 @@ const ResultThumbnailList = ({ testParam }) => {
           <div key={`/${item?.info?.mainUrl}`}>
             <Link to={`/${item?.info?.mainUrl}`}>
               <img
-                style={{ width: "100%" }}
+                style={{width: "450px", height:"363px"}}
                 src={item?.info?.thumbImage}
                 alt={item?.info?.mainTitle}
               />

@@ -131,22 +131,22 @@ export const TESTS = [
       },
       {
         which: "TF",
-        question: "에렌은 결국 자신이 죽어야 모든 상황이\n끝나는걸 알고있다.\n만약 너가 에렌이라면 어떻게 행동할건가?",
+        question: "에렌은 결국 자신이 죽어야 \n모든 상황이 끝나는걸 알고있다.\n만약 너가 에렌이라면 어떻게 행동할건가?",
         answers: [
           {
             type: "T",
-            content: "내가 죽는 것이 인류와 세계에\n이익을 준다면 기꺼이 죽음을 감수한다.",
+            content: "내가 죽는 것이 인류와 세계에 이익을 준다면 기꺼이 죽음을 감수한다.",
           },
           {
             type: "F",
-            content: "인생에서 제일 중요한 건 나 자신이다.\n내가 왜 남들을 위해 희생해야하는지 \n생각하며 결정을 망설인다",
+            content: "인생에서 제일 중요한 건 나 자신이다. 내가 왜 남들을 위해 희생해야하는지 생각하며 결정을 망설인다.",
           },
         ],
       },
 
       {
         which: "JP",
-        question: "동료가 거인화 주사를 맞고 무지성 거인으로 변했다.\n너는 어떻게 반응할건가?",
+        question: "동료가 적에 의해 거인화 주사를 \n맞고 무지성 거인으로 변했다.\n너는 어떻게 반응할건가?",
         answers: [
           {
             type: "J",
@@ -306,169 +306,169 @@ export const TESTS = [
     questions: [
     {
       which: "EI",
-      question: "What will you do when the wall is breached and the Titans appear?",
+      question: "While living a peaceful life... the wall is breached and Titans appear.\nWhat will you do?",
       answers: [
         {
           type: "E",
-          content: "Gather people around, share the situation, and find a way to move together."
+          content: "Inform those around you and\nmove with your comrades\nto take down the Titans."
         },
         {
           type: "I",
-          content: "First, quietly assess the situation and calculate a strategy to take down the Titans."
+          content: "Assess the number of Titans that have entered the wall, calculate a plan in your head, and act alone."
         }
       ]
     },
     {
       which: "EI",
-      question: "What will you do when night falls before the first expedition of the Survey Corps?",
+      question: "The night before you head beyond\nthe Walls as a member of the \nSurvey Corps—how will you spend it?",
       answers: [
         {
           type: "E",
-          content: "Talk to your comrades, share your anxiety, and gather your resolve."
+          content: "Talk with your comrades, share\nyour anxiety, and strengthen\nyour resolve together."
         },
         {
           type: "I",
-          content: "Find a quiet corner alone to prepare for tomorrow and collect your thoughts."
+          content: "Honestly, you're terrified...\nYou start planning an escape from the Survey Corps even now."
         }
       ]
     },
     {
       which: "EI",
-      question: "When a comrade is captured by a Titan and is in danger of dying, how will you react?",
+      question: "A comrade is caught by a Titan and is on the verge of death. What do you do?",
       answers: [
         {
           type: "E",
-          content: "Immediately rush in to rescue the comrade and attack the Titan."
+          content: "Without a second thought, you charge at the Titan to save your comrade."
         },
         {
           type: "I",
-          content: "Analyze the situation, find the most effective way to save the comrade, and move with a well-thought-out plan."
+          content: "If I try to save them, I might die too. As cruel as it sounds, if they’re not someone close to me,\nI leave them behind."
         }
       ]
     },
     {
       which: "SN",
-      question: "What will you do when you find out that there are Titans inside the wall?",
+      question: "How would you feel if you discovered that there are Titans hidden inside the very\nWalls you've lived within your whole life?",
       answers: [
         {
           type: "S",
-          content: "Look for concrete evidence or information to understand why these beings are hiding inside the walls."
+          content: "You’re overwhelmed by the shock of realizing that the terrifying \nTitans were actually that close\nto you all along."
         },
         {
           type: "N",
-          content: "I believe there must be a bigger secret or purpose behind the existence of Titans within the wall, beyond just their presence."
+          content: "You immediately seek evidence\nand information to understand\nwhy such beings are hidden\ninside the Walls."
         }
       ]
     },
     {
       which: "SN",
-      question: "You kill Titans to save humanity, but over time, you start enjoying killing them. What do you think about this?",
+      question: "You started killing Titans to save humanity,\nbut over time, you realize you're\nbeginning to enjoy the slaughter.\nWhat thought crosses your mind?",
       answers: [
         {
           type: "S",
-          content: "I still think that killing Titans is essential for saving humanity in a practical sense."
+          content: "You convince yourself that killing Titans is still a necessary and realistic way to protect humanity."
         },
         {
           type: "N",
-          content: "The fact that killing Titans has shifted from a necessity to enjoyment means that I may have lost sight of the true purpose of this battle."
+          content: "You start to wonder if finding joy in killing means you’ve lost sight of the true purpose of this battle."
         }
       ]
     },
     {
       which: "SN",
-      question: "What will you think when you find out that Bertholdt and Reiner are Titans?",
+      question: "Your comrades—Bertholdt and Reiner—whom you trained and fought alongside,\nreveal to you that they are Titans.\nHow do you react?",
       answers: [
         {
           type: "S",
-          content: "Immediately enter combat mode, using the abilities and information they have to prepare for the battle."
+          content: "Though it pains you, you immediately prepare for battle using the skills and knowledge you gained while being with them."
         },
         {
           type: "N",
-          content: "Think about what this revelation means, why they suddenly revealed their identities, and what their true intentions might be."
+          content: "You're filled with anger and betrayal, but stay calm and try to understand why they chose to reveal their identities now."
         }
       ]
     },
     {
       which: "TF",
-      question: "During the invasion of the Marley coast, when civilian casualties are inevitable, what will you do?",
+      question: "During the assault on the Marleyan coast, you’re in the middle of a mission when civilian casualties become unavoidable.\nWhat will you do?",
       answers: [
         {
           type: "T",
-          content: "If the success of the operation prevents even greater damage, emotions must be set aside, and we should proceed as planned."
+          content: "If the operation’s success will ultimately prevent greater losses, you proceed as planned—even if it means civilian casualties."
         },
         {
           type: "F",
-          content: "Even if the operation risks failing, the sacrifice of innocent lives should be avoided at all costs."
+          content: "Even if it risks the mission's failure, you do everything you can to avoid sacrificing innocent lives."
         }
       ]
     },
     {
       which: "TF",
-      question: "If Levi asks you and your comrades to sacrifice yourselves as bait to kill the Titans, how will you respond?",
+      question: "To kill a Titan, Levi asks you and your comrades to sacrifice yourselves as bait.\nWhat goes through your mind?",
       answers: [
         {
           type: "T",
-          content: "From a rational standpoint, if our sacrifice is necessary to achieve the greater goal, it must be accepted."
+          content: "From a logical standpoint, if our sacrifice is necessary to achieve a greater goal, it must be accepted."
         },
         {
           type: "F",
-          content: "From a human perspective, it’s difficult to accept such a choice. I would think about whether this decision is truly right."
+          content: "The most important thing in life is myself. If I die, nothing else matters—so I refuse the order."
         }
       ]
     },
     {
       which: "TF",
-      question: "Eren knows that he must die for everything to end. If you were Eren, how would you act?",
+      question: "Eren realizes that his own death is\nthe only way to end everything.\nIf you were in Eren's position,\nwhat would you do?",
       answers: [
         {
           type: "T",
-          content: "If my death benefits humanity and the world, I would willingly accept it."
+          content: "If my death would benefit humanity and bring peace to the world,\nI would willingly accept it."
         },
         {
           type: "F",
-          content: "Knowing that my death is the only way to end everything, I would emotionally struggle with that decision."
+          content: "The most important thing in life is myself. I hesitate, wondering why I should sacrifice myself for others."
         }
       ]
     },
     {
       which: "JP",
-      question: "If you could save only one between Erwin and Armin, how would you decide?",
+      question: "A comrade has been injected with the Titan serum and transformed into a mindless Titan.\nHow do you respond?",
       answers: [
         {
           type: "J",
-          content: "Strategically, I would save Erwin, who can provide greater value."
+          content: "They may have been a comrade once, but now they’re a Titan. \nI kill them immediately."
         },
         {
           type: "P",
-          content: "Before deciding, I would think about the meaning of their lives and let someone else make the final decision."
+          content: "I observe the situation first and look for any alternative before taking action."
         }
       ]
     },
     {
       which: "JP",
-      question: "After Mikasa kills Eren and peace is achieved through the sacrifice of many, what emotions do you feel?",
+      question: "You have one Titan injection and must choose between saving Commander Erwin or your close friend Armin. What do you decide?",
       answers: [
         {
           type: "J",
-          content: "Although a great sacrifice was needed, now that peace is here, I must plan for the future and follow that path."
+          content: "I choose Commander Erwin, whose strategic value is vital for humanity’s future."
         },
         {
           type: "P",
-          content: "Even though peace has come, I continue to wonder if this was the right conclusion, or if there was another choice."
+          content: "For me, friendship is what matters most. I save Armin, my dear friend."
         }
       ]
     },
     {
       which: "JP",
-      question: "A comrade is injected with the Titan serum and transforms into a mindless Titan. How will you react?",
+      question: "Mikasa ends up killing Eren, and after countless sacrifices, peace is finally restored.\nHow do you feel?",
       answers: [
         {
           type: "J",
-          content: "Although they were once a comrade, they are now a Titan, so I will immediately kill them."
+          content: "Though it required great sacrifice, peace has come. I focus on planning my future and moving forward."
         },
         {
           type: "P",
-          content: "I will observe the situation and try to find another way to deal with it."
+          content: "Even with peace, I keep wondering if this was the right ending, or if there could’ve been another way."
         }
       ]
     }
@@ -592,169 +592,169 @@ export const TESTS = [
     questions: [
     {
       which: "EI",
-      question: "壁が突破され、巨人が現れた瞬間、あなたはどう行動しますか？",
+      question: "平和な日常を送っていたある日…壁が破られ、巨人が現れた。この時、あなたはどう行動する？",
       answers: [
         {
           type: "E",
-          content: "周りの人々を集め、状況を共有し、一緒に動く方法を見つけます。"
+          content: "周囲の人々にこの事態を知らせ、仲間と共に巨人を討伐するために行動する。"
         },
         {
           type: "I",
-          content: "まず静かに周囲を確認し、巨人を倒すための戦略を頭の中で計算します。"
+          content: "壁内に侵入した巨人の数を把握し、頭の中で戦略を立てて単独で動く。"
         }
       ]
     },
     {
       which: "EI",
-      question: "調査兵団の初出発前、夜が訪れた時、あなたは何をしますか？",
+      question: "調査兵団として明日壁の外へ出る前夜、あなたはどうやって夜を過ごす？",
       answers: [
         {
           type: "E",
-          content: "仲間と話しながら不安を共有し、心を落ち着けます。"
+          content: "仲間たちと話し、不安を分かち合いながら覚悟を固める。"
         },
         {
           type: "I",
-          content: "一人静かな隅で明日の準備をしながら心を整理します。"
+          content: "正直、怖くてたまらない…今からでも調査兵団から逃げ出す方法を考える。"
         }
       ]
     },
     {
       which: "EI",
-      question: "仲間が巨人に捕まって死ぬ危機に直面した時、あなたはどう行動しますか？",
+      question: "仲間が巨人に捕まり、死の危機に瀕している。この時、あなたはどう行動する？",
       answers: [
         {
           type: "E",
-          content: "すぐに仲間を救出するために巨人に突進します。"
+          content: "何も考えず、すぐに仲間を助けるために巨人へ突進する。"
         },
         {
           type: "I",
-          content: "状況を分析し、仲間を救うための効果的な方法を見つけ、シナリオを考えて行動します。"
+          content: "助けようとして自分も死ぬかもしれない。辛いが、親しい仲間가でなければ見捨てる。"
         }
       ]
     },
     {
       which: "SN",
-      question: "壁の中に巨人がいることを知った時、あなたはどう反応しますか？",
+      question: "自分が一生暮らしてきた壁の中に巨人がいたと知ったとき、あなたはどう感じる？",
       answers: [
         {
           type: "S",
-          content: "なぜその存在が壁の中に隠れているのか、その理由を知るために事実的な証拠や情報を探します。"
+          content: "あれほど恐れていた巨人が、こんなにも身近にいたという事実に大きな衝撃を受ける。"
         },
         {
           type: "N",
-          content: "巨人が壁の中に存在する理由は、その存在自体を超えて、もっと大きな秘密や目的があるに違いないと思います。"
+          content: "なぜそんな存在が壁の中に隠されていたのか、その理由を知るために証拠や情報を集めようとする。"
         }
       ]
     },
     {
       which: "SN",
-      question: "人類を救うために巨人を殺すが、次第に巨人殺しを楽しんでいる自分を発見した時、どう思いますか？",
+      question: "人類を救うために巨人を倒していたはずが、いつの間にかその虐殺に快感を覚えている自分に気づいた。このとき、あなたの頭に浮かぶ考えは？",
       answers: [
         {
           type: "S",
-          content: "この状況で巨人を殺すことが現実的に人類を救うために重要なことだと考え続けます。"
+          content: "今でも巨人を倒すことは現実的に人類を救うために必要な行動だと思い続ける。"
         },
         {
           type: "N",
-          content: "巨人を殺すことが最初の目的を超えて楽しみに変わったということは、この戦いの本質を失っている可能性があると考えます。"
+          content: "倒すことに喜びを感じ始めているのは、この戦いの本質を見失った証かもしれないと考える。"
         }
       ]
     },
     {
       which: "SN",
-      question: "ベルトルトとライナーが巨人であることを知った時、あなたはどう反応しますか？",
+      question: "一緒に訓練し、共に過ごしてきた仲間——ベルトルトとライナーが、実は巨人だったと告白してきたとき、あなたはどう反応する？",
       answers: [
         {
           type: "S",
-          content: "彼らが持っている能力と情報を元に、すぐに戦闘態勢に入ります。"
+          content: "悲しみを感じながらも、彼らと過ごした中で得た技術と情報をもとに即座に戦闘態勢に入る。"
         },
         {
           type: "N",
-          content: "この事実が何を意味するのか、なぜ彼らが突然正体を明かしたのか、その理由を考えます。"
+          content: "怒りと裏切られた気持ちが湧くが、まずは冷静に、なぜ今になって正体を明かしたのかを考える。"
         }
       ]
     },
     {
       which: "TF",
-      question: "マーレの海岸侵攻時、敵との作戦中に民間人の犠牲が避けられない場合、あなたはどうしますか？",
+      question: "マーレの海岸を襲撃中、作戦遂行中に民間人の犠牲が避けられない状況に陥った場合、あなたはどうする？",
       answers: [
         {
           type: "T",
-          content: "作戦の成功がより大きな被害を防ぐ道であるなら、感情を抑えて計画通りに進めるべきです。"
+          content: "最終的に作戦の成功がより大きな被害を防ぐのであれば、民間人の犠牲はやむを得ないとして計画通りに進める。"
         },
         {
           type: "F",
-          content: "たとえ作戦が失敗する危険があっても、無実の人々の犠牲は避けるべきです。"
+          content: "たとえ作戦が失敗する可能性があっても、無実の人々の犠牲はできる限り避けようとする。"
         }
       ]
     },
     {
       which: "TF",
-      question: "巨人を倒すためにリヴァイが仲間と共に死んでくれと頼んだ時、あなたはどう思いますか？",
+      question: "巨人を倒すために、リヴァイが仲間と共に囮になって死んでくれと頼んできた。その時、あなたはどう思う？",
       answers: [
         {
           type: "T",
-          content: "理性で考えれば、私たちの犠牲が大きな目的を達成するために必要であるなら、受け入れなければならない。"
+          content: "論理的に見て、自分たちの犠牲がより大きな目的を果たすために必要なら、受け入れるべきだと思う。"
         },
         {
           type: "F",
-          content: "人間的な面でその選択を受け入れることは難しい。自分がその決断が正しいのか考えます。"
+          content: "人生で最も大切なのは自分自身。自分が死んだらすべてが無意味だから、その命令は拒否する。"
         }
       ]
     },
     {
       which: "TF",
-      question: "エレンは最終的に自分が死ななければすべての状況が終わることを知っている。もしあなたがエレンなら、どう行動しますか？",
+      question: "エレンは、自分が死ななければすべてが終わらないことを悟っている。もしあなたがエレンの立場だったら、どうする？",
       answers: [
         {
           type: "T",
-          content: "自分の死が人類と世界に利益をもたらすのであれば、喜んで死を受け入れます。"
+          content: "自分の死が人類と世界のためになるのなら、喜んでその運命を受け入れる。"
         },
         {
           type: "F",
-          content: "自分が死ななければすべてが終わると知って、その決断を下すまで感情的に自分と戦い続けます。"
+          content: "人生で最も大切なのは自分自身。他人のために犠牲になるなんて…そう思って迷ってしまう。"
         }
       ]
     },
     {
       which: "JP",
-      question: "エルヴィン団長とアルミンのどちらか一人だけを救えるとしたら、どう決めますか？",
+      question: "仲間が巨人化の注射を打たれ、無垢の巨人に変わってしまった。あなたはどう反応する？",
       answers: [
         {
           type: "J",
-          content: "戦略的に大きな価値を発揮するエルヴィン団長を救います。"
+          content: "かつては仲間でも、今は巨人。すぐに討つべきだと判断する。"
         },
         {
           type: "P",
-          content: "決定を下す前に彼らの人生の意味を考えながら、他の誰かに決定を任せます。"
+          content: "まず状況を見極めて、他に方法がないかを探ろうとする。"
         }
       ]
     },
     {
       which: "JP",
-      question: "ミカサがエレンを殺し、何百万もの人々の犠牲の末に平和が訪れた。その時、あなたはどんな感情を抱きますか？",
+      question: "巨人化の注射が一つしかなく、エルヴィン団長と親友のアルミンのどちらか一人しか救えない場合、あなたはどう決断する？",
       answers: [
         {
           type: "J",
-          content: "結局、大きな犠牲が必要だったが、平和が訪れたので、これからの生活を計画し、その道を進まなければならない。"
+          content: "人類の未来のために戦略的価値が高いエルヴィン団長を選ぶ。"
         },
         {
           type: "P",
-          content: "平和が訪れたけれど、この結末が正しかったのか、他の選択肢はなかったのか考え続けます。"
+          content: "自分にとって一番大切なのは友情。親友のアルミンを救う。"
         }
       ]
     },
     {
       which: "JP",
-      question: "仲間が巨人化の薬を飲み、無知の巨人に変わった。あなたはどう反応しますか？",
+      question: "ミカサが最後にエレンを殺し、多くの犠牲の末に平和が訪れた。その時、あなたは何を感じる？",
       answers: [
         {
           type: "J",
-          content: "かつての仲間でも、今は巨人なので即座に殺します。"
+          content: "大きな犠牲は伴ったが、平和が訪れたのなら、これからの人生を計画して前向きに生きていく。"
         },
         {
           type: "P",
-          content: "状況を見守り、他の方法がないかまず探してみます。"
+          content: "平和になっても、この結末が本当に正しかったのか、他に選択肢はなかったのかと考え続ける。"
         }
       ]
     }

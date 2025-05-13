@@ -39,7 +39,7 @@ function ThumbnailList({lang}){
                         to={`${base_url}/${test?.info?.mainUrl}`}
                     >
                         <img
-                            style={{width: "27rem", height:"18rem"}}
+                            style={{width: "450px", height:"363px"}}
                             src={test?.info?.thumbImage} 
                             alt={test?.info?.mainUrl} 
                         />
