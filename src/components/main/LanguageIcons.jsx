@@ -10,7 +10,7 @@ function LanguageIcons(){
     }
 
     return (
-        <div>
+        <div style={{ marginTop: '60px' }}>
             {/* -> mbti.com/?lang=Kor */}
             <CircleFlag
                 className={styles.flagIcon}

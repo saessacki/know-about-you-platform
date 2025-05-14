@@ -25,7 +25,7 @@ function ResultButtonGroup({testParam, resultParam, lang}){
       copyLinkText : "URL copied."
     },
     Jp : {
-      copyLink : "リンクコピー",
+      copyLink : "リンクをコピーする",
       redo : "やり直し",
       goHome : "他のテストをしに行く",
       copyLinkText : "URLがコピーされました."
@@ -49,29 +49,30 @@ function ResultButtonGroup({testParam, resultParam, lang}){
   }
 
   return (
-    <div className={styles.mainDiv}>
-      <div className={styles.upperDiv}>
+    <div className={styles.buttonContainer}>
+      <div className={styles.upperButtonGroup}>
         <button
           className={styles.upperButton}
-          onClick={onClickCopyUrlButton}>
+          onClick={onClickCopyUrlButton}
+        >
           <LinkOutlined />
-          &nbsp; {lang && foreignTextsObject[lang]?.copyLink}
+          <span>{lang && foreignTextsObject[lang]?.copyLink}</span>
         </button>
         <button 
           className={styles.upperButton}
-          onClick={onClickRedoButton}>
+          onClick={onClickRedoButton}
+        >
           <RedoOutlined />
-          &nbsp; {lang && foreignTextsObject[lang]?.redo}
+          <span>{lang && foreignTextsObject[lang]?.redo}</span>
         </button>
       </div>
-      <div className={styles.bottomDiv}>
-        <button 
-          className={styles.bottomButton}
-          onClick={onClickGoHomeButton}>
-          <HomeOutlined />
-          &nbsp; {lang && foreignTextsObject[lang]?.goHome}
-        </button>
-      </div>
+      <button 
+        className={styles.bottomButton}
+        onClick={onClickGoHomeButton}
+      >
+        <HomeOutlined />
+        <span>{lang && foreignTextsObject[lang]?.goHome}</span>
+      </button>
     </div>
   ); 
 }

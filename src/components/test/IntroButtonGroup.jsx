@@ -37,19 +37,15 @@ const IntroButtonGroup = ({ testParam, lang }) => {
   };
 
   return (
-    <div>
-      <div>
-          <button className={styles.upperButton} onClick={onClickCopyUrlButton}>
-            <LinkOutlined />
-            &nbsp; {lang && foreignTextsObject[lang]?.copyLink}
-          </button>
-      </div>
-      <div>
-        <button className={styles.bottomButton} onClick={onClickGoHomeButton}>
-          <HomeOutlined /> 
-          &nbsp; {lang && foreignTextsObject[lang]?.goToHome}
-        </button>
-      </div>
+    <div className={styles.buttonContainer}>
+      <button className={styles.upperButton} onClick={onClickCopyUrlButton}>
+        <LinkOutlined />
+        <span>{lang && foreignTextsObject[lang]?.copyLink}</span>
+      </button>
+      <button className={styles.bottomButton} onClick={onClickGoHomeButton}>
+        <HomeOutlined />
+        <span>{lang && foreignTextsObject[lang]?.goToHome}</span>
+      </button>
     </div>
   );
 };

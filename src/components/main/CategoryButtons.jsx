@@ -5,50 +5,100 @@ import styles from './categoryButtons.module.css';
 function CategoryButtons(){
     const [searchParams] = useSearchParams();
     const [language, setLanguage] = useState('Kor');
+    const [selectedCategory, setSelectedCategory] = useState('all');
     const navigate = useNavigate();
+    
     const foreignTextsObject = {
         Kor : {
-            all : "전체",
-            love : "연애",
-            characteristic: "성격",
+            all : {
+                text: "전체",
+                icon: "🌈"
+            },
+            love : {
+                text: "연애",
+                icon: "💝"
+            },
+            characteristic: {
+                text: "성격",
+                icon: "✨"
+            }
         },
         Eng : {
-            all : "All",
-            love : "Love",
-            characteristic: "Personality",
+            all : {
+                text: "All",
+                icon: "🌈"
+            },
+            love : {
+                text: "Love",
+                icon: "💝"
+            },
+            characteristic: {
+                text: "Personality",
+                icon: "✨"
+            }
         },
         Jp : {
-            all : "すべて",
-            love : "れんあい",
-            characteristic: "せいかく",
-        },
-    }
+            all : {
+                text: "すべて",
+                icon: "🌈"
+            },
+            love : {
+                text: "れんあい",
+                icon: "💝"
+            },
+            characteristic: {
+                text: "せいかく",
+                icon: "✨"
+            }
+        }
+    };
 
     useEffect(() => {
         const currentLang = searchParams.get('lang') || 'Kor';
+        const currentCat = searchParams.get('cat') || 'all';
         setLanguage(currentLang);
-    },[searchParams]);
+        setSelectedCategory(currentCat);
+    }, [searchParams]);
 
     const onCategoryButtonClick = (category) => {
-        // mbti.com 접속 -> mbti.com/?lang=Kor&cat=love
-        if(category ===  "all"){
+        if(category === "all"){
             navigate(`/?lang=${language}`);
         } else if(category === 'love' || category === 'characteristic'){
             navigate(`/?lang=${language}&cat=${category}`);
         } else {
-            alert('잘못된 카테고리입니다.')
+            alert('잘못된 카테고리입니다.');
             navigate(`/?lang=${language}`);
         }
-    }
+        setSelectedCategory(category);
+    };
+
+    const getButtonClassName = (category) => {
+        return `${styles.categoryButton} ${selectedCategory === category ? styles.categoryButtonSelected : ''}`;
+    };
 
     return (
-        <div>
-            {/* mbti.com | mbti.com/?lang=Eng */}
-            <button className={styles.categoryButton} onClick={()=> onCategoryButtonClick("all")}>{foreignTextsObject[language].all}</button>
-            {/* mbti.com | mbti.com/?lang=Eng&cat=love */}
-            <button className={styles.categoryButton} onClick={()=> onCategoryButtonClick("love")}>{foreignTextsObject[language].love}</button>
-            {/* mbti.com | mbti.com/?lang=Eng&cat=characteristic */}
-            <button className={styles.categoryButton} onClick={()=> onCategoryButtonClick("characteristic")}>{foreignTextsObject[language].characteristic}</button>
+        <div className={styles.categoryButtonContainer}>
+            <button 
+                className={getButtonClassName('all')}
+                onClick={() => onCategoryButtonClick("all")}
+            >
+                <span className={styles.icon}>{foreignTextsObject[language].all.icon}</span>
+                {foreignTextsObject[language].all.text}
+            </button>
+            <button 
+                className={getButtonClassName('love')}
+                onClick={() => onCategoryButtonClick("love")}
+            >
+                <span className={styles.icon}>{foreignTextsObject[language].love.icon}</span>
+                {foreignTextsObject[language].love.text}
+            </button>
+            <button 
+                className={getButtonClassName('characteristic')}
+                onClick={() => onCategoryButtonClick("characteristic")}
+            >
+                <span className={styles.icon}>{foreignTextsObject[language].characteristic.icon}</span>
+                {foreignTextsObject[language].characteristic.text}
+            </button>
         </div>
     );
 }

@@ -7,7 +7,7 @@ function Footer(){
     </h5>
     <p>testkoko88@gmail.com</p>
     <p>
-        Disclaimer:<br/><br/>All content is provided for fun and entertainment purposes only
+        Disclaimer:<br/>All content is provided for fun and entertainment purposes only
       </p>
     <p>TEST-KOKO All rights reserved. 2025</p>
     <div>
