@@ -7,10 +7,26 @@ import Blog from './page/Blog';
 import { useEffect } from 'react';
 import ReactGA4 from 'react-ga4';
 import ScrollToTop from './utils/ScrollToTop';
+import { createGlobalStyle } from 'styled-components';
 
-export const base_url = "https://testkoko.com";
-//export const base_url = "http://localhost:5173";
+//export const base_url = "https://testkoko.com";
+export const base_url = "http://localhost:5173";
 
+const GlobalStyle = createGlobalStyle`
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  #root {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+  }
+`;
 
 function App() {
 
@@ -28,6 +44,7 @@ function App() {
   },[])
   return (
     <>
+      <GlobalStyle />
       <BrowserRouter>
         <ScrollToTop />
         <Routes>

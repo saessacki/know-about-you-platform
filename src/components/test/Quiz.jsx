@@ -5,23 +5,22 @@ import { Progress } from 'antd';
 import { arrayShuffler } from '../../tools/tools';
 
 function Quiz({setMode, questions, mbtiScore, setMbtiScore}) {
-
   const [questionNum, setQuestionNum] = useState(0);
+  
   const onOptionClick = (type) => {
-     //mbtiScore[type] = mbtiScore[type] + 1;
-    mbtiScore[type] += 1; //점수판 업데이트
-    setMbtiScore({...mbtiScore}); //불변성으로 인한 구조분해 할당 이용
+    mbtiScore[type] += 1;
+    setMbtiScore({...mbtiScore});
     setQuestionNum((prev) => prev + 1);
   }
   
-  useEffect(()=>{
-    if(questionNum === questions.length){
+  useEffect(() => {
+    if(questionNum === questions.length) {
       setMode("loading");
     }
-  },[questionNum, questionNum.length, setMode])
+  }, [questionNum, questions.length, setMode])
 
   return (
-    <div>
+    <div className={styles.quizContainer}>
       <h3 className={styles.questionText}>
         {questions[questionNum]?.question.split('\n').map((line, index) => (
           <React.Fragment key={index}>
@@ -30,20 +29,28 @@ function Quiz({setMode, questions, mbtiScore, setMbtiScore}) {
           </React.Fragment>
         ))}
       </h3>
-      {questions[questionNum]?.answers && arrayShuffler(questions[questionNum]?.answers)?.map((option) => (
-        <button
-          className={styles.optionButton}
-          onClick={() => onOptionClick(option.type)}
-          key={option.content}
-        >
-          {option.content.split('\n').map((line, index) => (
-            <React.Fragment key={index}>
-              {line}
-              <br />
-            </React.Fragment>
-          ))}
-        </button>
-      ))}
+      
+      <div>
+        {questions[questionNum]?.answers && 
+          arrayShuffler(questions[questionNum].answers).map((option) => (
+            <button
+              className={styles.optionButton}
+              onClick={() => onOptionClick(option.type)}
+              key={option.content}
+            >
+              <span>
+                {option.content.split('\n').map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </span>
+            </button>
+          ))
+        }
+      </div>
+
       <Progress 
         percent={(questionNum / questions.length) * 100} 
         showInfo={false}

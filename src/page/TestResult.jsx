@@ -9,6 +9,26 @@ import GoToHomeButton from '../components/test/GoToHomeButton.jsx';
 import BlogButton from '../components/testResult/BlogButton.jsx';
 import TestResultMetatagRenderer from '../components/metatagRenderer/TestResultMetatagRenderer.jsx';
 import CoupangDynamicBanner from '../components/CoupangDynamicBanner.jsx';
+import styled from 'styled-components';
+import GoAnotherTestBtn from '../components/testResult/GoAnotherTestBtn.jsx';
+const ResultPageContainer = styled.div`
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding: 0 0.8rem;
+  }
+`;
+
+const ContentSection = styled.div`
+  margin: 2rem 0;
+  
+  @media (max-width: 768px) {
+    margin: 1.5rem 0;
+  }
+`;
 
 function TestResult(){
     const navigate = useNavigate();
@@ -16,7 +36,7 @@ function TestResult(){
     const [renderResultInfo, setRenderResultInfo] = useState({});
     const [renderTestInfo, setRenderTestInfo] = useState({});
 
-    useEffect(()=>{
+    useEffect(() => {
         const testInfo = TESTS.find((test) => (test.info.mainUrl === testParam));
         if(!testInfo) {
             alert("존재하지 않는 테스트입니다!");
@@ -25,7 +45,7 @@ function TestResult(){
         
         setRenderTestInfo(testInfo);
 
-        const resultInfo = testInfo?.results?.find((result)=>(
+        const resultInfo = testInfo?.results?.find((result) => (
             result.query === resultParam
         ))
         if(!resultInfo){
@@ -33,38 +53,60 @@ function TestResult(){
             navigate(`/${testInfo?.info?.mainUrl}`);
         }
         setRenderResultInfo(resultInfo);
-    },[testParam, resultParam]);
+    }, [testParam, resultParam, navigate]);
+
     return (
-        <div>
+        <ResultPageContainer>
             <TestResultMetatagRenderer 
                 testParam={testParam}
                 resultParam={resultParam}
                 renderTestInfo={renderTestInfo}
             />
-            <TestResultRenderer
-                renderResultInfo={renderResultInfo}
-                lang={renderTestInfo?.info?.lang}
-            />
-            <ShareButtonGroup
-                testParam={testParam}
-                resultParam={resultParam}
-                renderTestInfo={renderTestInfo}
-                lang={renderTestInfo?.info?.lang}
-            />
-            <CoupangDynamicBanner unit={"resultBanner"}/>
-            <BlogButton
-                testParam={testParam}
-                lang={renderTestInfo?.info?.lang}
-            />
-            <ResultButtonGroup
-                testParam={testParam}
-                resultParam={resultParam}
-                renderTestInfo={renderTestInfo}
-                lang={renderTestInfo?.info?.lang}
-            />
-            <ResultThumbnailList testParam={testParam}/>
-            <GoToHomeButton page="Result"/>
-        </div>
+            <ContentSection>
+                <TestResultRenderer
+                    renderResultInfo={renderResultInfo}
+                    lang={renderTestInfo?.info?.lang}
+                />
+            </ContentSection>
+            <ContentSection>
+                <ShareButtonGroup
+                    testParam={testParam}
+                    resultParam={resultParam}
+                    renderTestInfo={renderTestInfo}
+                    lang={renderTestInfo?.info?.lang}
+                />
+            </ContentSection>
+            <ContentSection>
+                <CoupangDynamicBanner unit={"resultBanner"}/>
+            </ContentSection>
+            <ContentSection>
+                <BlogButton
+                    testParam={testParam}
+                    lang={renderTestInfo?.info?.lang}
+                />
+            </ContentSection>
+            <ContentSection>
+                <GoAnotherTestBtn
+                    testParam={testParam}
+                    resultParam={resultParam}
+                    lang={renderTestInfo?.info?.lang}
+                />
+            </ContentSection>
+            <ContentSection>
+                <ResultButtonGroup
+                    testParam={testParam}
+                    resultParam={resultParam}
+                    renderTestInfo={renderTestInfo}
+                    lang={renderTestInfo?.info?.lang}
+                />
+            </ContentSection>
+            <ContentSection>
+                <ResultThumbnailList testParam={testParam}/>
+            </ContentSection>
+            <ContentSection>
+                <GoToHomeButton page="Result"/>
+            </ContentSection>
+        </ResultPageContainer>
     );
 }
 

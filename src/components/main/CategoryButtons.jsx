@@ -50,7 +50,7 @@ function CategoryButtons(){
                 text: "せいかく",
                 icon: "✨"
             }
-        }
+    }
     };
 
     useEffect(() => {

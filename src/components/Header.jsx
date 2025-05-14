@@ -42,16 +42,9 @@ const HeaderContainer = styled.header`
   padding: 0 2rem;
   transition: all 0.3s ease;
   z-index: 1000;
-  
-  background: ${props => props.isScrolled ? 
-    'rgba(255, 255, 255, 0.9)' : 
-    'transparent'};
-  backdrop-filter: ${props => props.isScrolled ? 
-    'blur(10px)' : 
-    'none'};
-  box-shadow: ${props => props.isScrolled ? 
-    '0 2px 10px rgba(0, 0, 0, 0.1)' : 
-    'none'};
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 
   @media (max-width: 768px) {
     padding: 0 1rem;
@@ -72,8 +65,7 @@ const Logo = styled.div`
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: ${gradientAnimation} 5s ease infinite,
-             ${glowAnimation} 2s ease-in-out infinite;
+  animation: ${gradientAnimation} 5s ease infinite;
   cursor: pointer;
   letter-spacing: 2px;
   
@@ -117,9 +109,6 @@ export default function Header() {
   return (
     <HeaderContainer isScrolled={isScrolled}>
       <Logo>TESTKOKO</Logo>
-      <MenuButton>
-        <RiMenu3Line />
-      </MenuButton>
     </HeaderContainer>
   );
 } 

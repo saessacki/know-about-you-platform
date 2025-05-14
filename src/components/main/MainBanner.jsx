@@ -56,15 +56,21 @@ const BannerContainer = styled.div`
   background-size: 300% 300%;
   animation: ${gradientAnimation} 15s ease infinite;
   border-radius: 20px;
-  margin: 1.5rem 1rem;
+  margin: 1rem 1rem 0.5rem;
   box-shadow: 0 8px 20px rgba(30, 144, 255, 0.15);
   position: relative;
   overflow: hidden;
+  max-width: 100%;
 
   @media (max-width: 768px) {
-    padding: 2rem 1rem;
-    margin: 1rem 0.5rem;
+    padding: 1.5rem 1rem;
+    margin: 0.5rem;
     border-radius: 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.25rem 0.75rem;
+    margin: 0.25rem;
   }
 
   &::before {
@@ -85,7 +91,7 @@ const BannerContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
   color: white;
   margin: 0;
@@ -96,27 +102,30 @@ const Title = styled.h1`
   z-index: 1;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  word-break: keep-all;
+  line-height: 1.2;
 
   @media (max-width: 768px) {
-    font-size: 2.2rem;
     letter-spacing: 1px;
+    padding: 0 0.5rem;
   }
 `;
 
 const Subtitle = styled.p`
   color: white;
-  font-size: 1.2rem;
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
   margin-top: 1rem;
   opacity: 0.95;
   line-height: 1.4;
   font-weight: 500;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+  word-break: keep-all;
+  padding: 0 0.5rem;
 
   @media (max-width: 768px) {
-    font-size: 1rem;
     margin-top: 0.8rem;
-    line-height: 1.3;
+    line-height: 1.5;
   }
 `;
 
@@ -126,15 +135,19 @@ const Description = styled.div`
   gap: 0.6rem;
   margin-top: 1.5rem;
   color: white;
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
   opacity: 0.9;
+  width: 100%;
   
   p {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.5rem;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    line-height: 1.5;
+    padding-right: 1rem;
+    word-break: keep-all;
     
     &:hover {
       transform: translateX(5px);
@@ -142,12 +155,13 @@ const Description = styled.div`
   }
 
   @media (max-width: 768px) {
-    gap: 0.4rem;
+    gap: 0.8rem;
     margin-top: 1.2rem;
-    font-size: 0.9rem;
+    padding: 0 0.5rem;
 
     p {
-      gap: 0.3rem;
+      gap: 0.4rem;
+      padding-right: 0;
     }
   }
 `;

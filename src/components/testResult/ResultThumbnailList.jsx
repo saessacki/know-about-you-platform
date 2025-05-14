@@ -15,16 +15,10 @@ const ResultThumbnailList = ({ testParam }) => {
           <div key={`/${item?.info?.mainUrl}`} className={styles.thumbnailItem}>
             <Link to={`/${item?.info?.mainUrl}`} style={{ width: '100%' }}>
               <div className={styles.imageContainer}>
-                <span className={styles.imageTextTop}>
-                  {item?.info?.category || 'TEST'}
-                </span>
                 <img
                   src={item?.info?.thumbImage}
                   alt={item?.info?.mainTitle}
                 />
-                <span className={styles.imageTextBottom}>
-                  {item?.info?.category || 'TEST'}
-                </span>
               </div>
             </Link>
             {idx % 2 === 0 && <CoupangDynamicBanner unit={"resultBanner"} />}

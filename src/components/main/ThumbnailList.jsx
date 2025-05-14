@@ -5,31 +5,7 @@ import { base_url } from '../../App';
 import { FloatButton, Skeleton } from 'antd';
 import { eventSenderGA } from '../../tools/tools';
 import CoupangDynamicBanner from '../CoupangDynamicBanner';
-import styled, { keyframes } from 'styled-components';
-
-const shine = keyframes`
-  0% {
-    background-position: -200% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
-`;
-
-const pulse = keyframes`
-  0% {
-    transform: scale(1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  50% {
-    transform: scale(1.02);
-    box-shadow: 0 8px 24px rgba(135, 206, 235, 0.3);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-`;
+import styled from 'styled-components';
 
 const CategoryText = styled.span`
   position: absolute;
@@ -74,63 +50,26 @@ const ImageContainer = styled.div`
   overflow: hidden;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s ease;
   margin: 0 auto;
-  background: linear-gradient(
-    45deg,
-    #f5f5f5,
-    #ffffff,
-    #f5f5f5
-  );
-  background-size: 200% auto;
+  background: #ffffff;
   cursor: pointer;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
-      transparent,
-      rgba(255, 255, 255, 0.6),
-      transparent
-    );
-    transition: 0.5s;
-    z-index: 1;
-  }
+  transition: all 0.3s ease;
 
   @media (max-width: 768px) {
     max-width: 100%;
-    padding-top: 85%;
+    padding-top: 75%;
     border-radius: 12px;
-    animation: ${pulse} 2s infinite ease-in-out;
+    margin: 0.5rem 0;
   }
 
   &:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 12px 24px rgba(135, 206, 235, 0.4);
-
-    &::before {
-      left: 100%;
-    }
-
-    img {
-      transform: translate(-50%, -50%) scale(1.05);
-      filter: brightness(1.05);
-    }
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 
     ${CategoryText} {
       background: linear-gradient(45deg, #ff4081, #ff79b0);
       -webkit-background-clip: text;
       background-clip: text;
-      transform: translateX(-50%) scale(1.1);
-    }
-
-    @media (max-width: 768px) {
-      transform: scale(1.02);
     }
   }
 
@@ -145,8 +84,7 @@ const ImageContainer = styled.div`
     max-height: 85%;
     object-fit: contain;
     object-position: center;
-    transition: all 0.4s ease;
-    filter: brightness(1);
+    transition: all 0.3s ease;
   }
 `;
 
@@ -154,15 +92,14 @@ const ThumbnailContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  padding: 1rem;
+  gap: 2.5rem;
+  padding: 2rem 1rem;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    padding: 0;
-    gap: 1rem;
+    padding: 1rem 0.5rem;
+    gap: 1.5rem;
   }
 `;
 
@@ -171,10 +108,12 @@ const ThumbnailItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding: 0.5rem;
 
   @media (max-width: 768px) {
-    gap: 0.5rem;
+    gap: 1rem;
+    padding: 0;
   }
 `;
 
@@ -209,28 +148,38 @@ function ThumbnailList({lang}){
                 <ThumbnailItem key={test?.info?.mainUrl}>
                     <Link
                         to={`${base_url}/${test?.info?.mainUrl}`}
-                        style={{ width: '100%' }}
+                        style={{ width: '100%', textDecoration: 'none' }}
                     >
                         <ImageContainer>
-                            <CategoryText className="top">
-                                {test?.info?.category || 'TEST'}
-                            </CategoryText>
                             <img
                                 src={test?.info?.thumbImage} 
-                                alt={test?.info?.mainUrl} 
+                                alt={test?.info?.mainUrl}
+                                loading="lazy"
                             />
-                            <CategoryText className="bottom">
-                                {test?.info?.category || 'TEST'}
-                            </CategoryText>
                         </ImageContainer>
                     </Link>
-                    {idx % 2 === 0 && <CoupangDynamicBanner unit={"introBanner"} />}
+                    {idx % 2 === 0 && (
+                        <div style={{ width: '100%', margin: '1rem 0' }}>
+                            <CoupangDynamicBanner unit={"introBanner"} />
+                        </div>
+                    )}
                 </ThumbnailItem>
             )) 
         ) : (
-            <Skeleton active style={{height: "20rem"}}/>
+            <Skeleton active style={{height: "20rem", width: "100%", margin: "1rem 0"}}/>
         )}
-            <FloatButton.BackTop visibilityHeight={400} onClick={onBackToTopButtonClick}/>
+        <FloatButton.BackTop 
+            visibilityHeight={400} 
+            onClick={onBackToTopButtonClick}
+            style={{
+                bottom: 24,
+                right: 24,
+                '@media (max-width: 768px)': {
+                    bottom: 16,
+                    right: 16
+                }
+            }}
+        />
     </ThumbnailContainer>
     );
 }

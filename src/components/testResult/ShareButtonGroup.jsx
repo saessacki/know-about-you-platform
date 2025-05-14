@@ -31,14 +31,14 @@ function ShareButtonGroup({testParam, resultParam, renderTestInfo, lang}) {
           url={`${base_url}/${testParam}/result/${resultParam}`}
           hashtag={`#${renderTestInfo?.info?.mainTitle}`}
         >
-          <FacebookIcon round={true} size={48} className={styles.socialMediaIcon}/>
+          <FacebookIcon round={true} size={44} className={styles.socialMediaIcon}/>
         </FacebookShareButton>
         <TwitterShareButton
           title={renderTestInfo?.info?.mainTitle}
           url={`${base_url}/${testParam}/result/${resultParam}`}
           hashtags={[renderTestInfo?.info?.mainTitle]}  
         >
-          <XIcon round={true} size={48} className={styles.socialMediaIcon}/>
+          <XIcon round={true} size={44} className={styles.socialMediaIcon}/>
         </TwitterShareButton>
         <button className={styles.urlShareButton} onClick={()=>{
          copy(`${base_url}/${testParam}/result/${resultParam}`)

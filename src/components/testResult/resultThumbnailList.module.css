@@ -3,11 +3,8 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 1rem;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box; /* 패딩이 너비에 포함되도록 설정 */
+  box-sizing: border-box;
 }
 
 .thumbnailItem {
@@ -15,22 +12,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  box-sizing: border-box; /* 패딩이 너비에 포함되도록 설정 */
+  gap: 1.5rem;
 }
 
 .imageContainer {
   width: 100%;
-  max-width: 450px;
+  max-width: 600px;
   position: relative;
-  padding-top: 80.67%; /* 363/450 = 0.8067 -> 유지할 비율 */
+  padding-top: 80.67%;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   margin: 0 auto;
-  background-color: #f5f5f5; /* 이미지 여백에 대한 배경색 추가 */
-  box-sizing: border-box; /* 패딩이 너비에 포함되도록 설정 */
+  background-color: #ffffff;
+}
+
+.imageContainer:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .imageText {
@@ -41,16 +41,17 @@
   font-weight: bold;
   font-size: 1.2rem;
   z-index: 1;
+  transition: color 0.3s ease;
 }
 
 .imageTextTop {
   composes: imageText;
-  top: 10px;
+  top: 15px;
 }
 
 .imageTextBottom {
   composes: imageText;
-  bottom: 10px;
+  bottom: 15px;
 }
 
 .imageContainer img {
@@ -58,45 +59,42 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: auto; /* 자동 너비로 변경 */
-  height: auto; /* 자동 높이로 변경 */
-  max-width: 100%; /* 컨테이너 너비를 넘지 않도록 제한 */
-  max-height: 100%; /* 컨테이너 높이를 넘지 않도록 제한 */
+  width: auto;
+  height: auto;
+  max-width: 95%;
+  max-height: 85%;
   object-fit: contain;
   object-position: center;
-  background-color: #f5f5f5; /* 이미지 자체의 배경색도 설정 */
 }
 
 @media (max-width: 768px) {
   .thumbnailContainer {
-    padding: 0.5rem;
-    gap: 1rem;
-    width: 100vw; /* 뷰포트 너비로 설정 */
-    max-width: 100%; /* 최대 너비 제한 */
+    gap: 1.5rem;
   }
 
   .thumbnailItem {
-    gap: 0.5rem;
-    width: 100%;
-    padding: 0 0.5rem;
+    gap: 1rem;
   }
 
   .imageContainer {
-    width: 100%;
+    border-radius: 12px;
     max-width: none;
-    padding-top: 100%; /* 정사각형 비율로 변경 */
-    border-radius: 8px;
   }
 
   .imageText {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .imageTextTop {
-    top: 5px;
+    top: 10px;
   }
 
   .imageTextBottom {
-    bottom: 5px;
+    bottom: 10px;
+  }
+
+  .imageContainer img {
+    max-width: 92%;
+    max-height: 82%;
   }
 } 
