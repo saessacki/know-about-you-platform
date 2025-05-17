@@ -6,10 +6,8 @@ export const TESTS = [
       subTitle: "진격의 거인 세계관 기반 MBTI 테스트",
       mainUrl: "attackOnTitanMBTI",
       scoreType: "MBTI",
-      mainImage:
-      "https://images.testkoko.com/intro/attack_of_titan_mbti/titan_intro_ko.avif",
-      thumbImage:
-        "https://images.testkoko.com/thumbnail/attack_of_titan_mbti/titan_main_thumb_ko.avif",
+      mainImage: "https://images.testkoko.com/intro/attack_of_titan_mbti/titan_intro_ko.avif",
+      thumbImage: "https://images.testkoko.com/thumbnail/attack_of_titan_mbti/titan_main_thumb_ko.avif",
       lang: "Kor",
       category: "characteristic",
       locale: "ko_KR",
@@ -858,6 +856,249 @@ export const TESTS = [
       },
     ],
   },
+  //「너 T야?
+  {
+    //너 T야?
+
+    /**
+     * 🧪 「너 T발 C야?」 : 병맛 T 성향 측정기 ver. 3선다 12문항
+❓1. 친구가 “연락 안 와서 서운했어…”라고 말함
+“헉 미안해ㅠ 나도 너 생각했어…” → 0점
+
+“어, 나도 좀 바빴어. 다음엔 먼저 연락 줄게~” → 1점
+
+“연락을 원하면 먼저 보내야지. 감정보다 구조다.” → 2점
+
+❓2. 친구가 전 남친 얘기를 반복해서 함 (5번째)
+“또 힘들지… 얘기 다 들어줄게…” → 0점
+
+“그 얘기 또야? 그래도 마지막으로만 듣자” → 1점
+
+“그 사람 얘기 5회차, 이제 통계적으로 의미 없음” → 2점
+
+❓3. 팀플에서 한 명이 실수함
+“그럴 수도 있지! 우리 다시 잘해보자~” → 0점
+
+“괜찮긴 한데 다음엔 좀 더 신경 써줘” → 1점
+
+“결과 망쳤잖아. 데이터상 너가 변수야” → 2점
+
+❓4. 친구가 실연 후 혼술 중 전화함
+“괜찮아? 내가 당장 갈게…” → 0점
+
+“울고 나면 좀 나아져. 집에서 쉬어” → 1점
+
+“시간 아깝다. 자고 일어나면 걔 이름도 까먹음” → 2점
+
+❓5. 누군가 “내가 이상한 거야?”라고 물을 때
+“아니야! 너는 그대로도 완벽해✨” → 0점
+
+“음… 살짝 그런 면은 있을 수도?” → 1점
+
+“ㅇㅇ 이상함. 근거 말해줄까?” → 2점
+
+❓6. 친구가 감정적으로 폭발했을 때
+“그럴 수 있어… 감정은 소중한 거야…” → 0점
+
+“화났을 땐 한 발 물러나는 게 좋아” → 1점
+
+“이성 회로 고장났나? 리부트 하자” → 2점
+
+❓7. 감동적인 드라마 결말을 본 뒤
+“엉엉ㅠㅠ 인생은 왜 이렇게 아픈 거야” → 0점
+
+“음… 감동은 했지만 좀 과장이었지” → 1점
+
+“전개 개연성 없음. 감정은 낭비임” → 2점
+
+❓8. 친구가 예민하게 반응할 때
+“미안해… 상처 줄 생각 없었어…” → 0점
+
+“내 말이 오해됐나 보네. 의도는 그게 아냐” → 1점
+
+“팩트가 불편한 거면 네 문제 아님?” → 2점
+
+❓9. 갑자기 일정을 바꾸자는 친구
+“오케이~ 너가 편하면 나도 괜찮아!” → 0점
+
+“갑작스럽긴 한데 조정해볼게” → 1점
+
+“계획 어겼으니까 다음에 내가 정함” → 2점
+
+❓10. 누가 사과 없이 그냥 넘기려 할 때
+“에이 괜찮아~ 마음만 받았어” → 0점
+
+“음… 그래도 사과는 있었으면 좋았겠다” → 1점
+
+“감정적 사과 생략? 그럼 논리적 책임 요구함” → 2점
+
+❓11. 친구가 "내가 요즘 예민한가 봐..."라고 할 때
+“아냐ㅠ 너 요즘 많이 힘들잖아…” → 0점
+
+“조금 그런 거 같긴 해. 내가 도와줄게” → 1점
+
+“ㅇㅇ 예민 맞음. 근데 이유 설명해줄 수 있음?” → 2점
+
+❓12. 누군가 "내 기분 좀 생각해줘"라고 말할 때
+“미안해… 너 마음 생각 못했어ㅠ” → 0점
+
+“그럴 수도 있겠다. 다음부턴 신경 쓸게” → 1점
+
+“기분도 중요하지만, 사실관계가 더 중요함” → 2점
+
+📊 결과 해석
+0~8점 : 🧃 감성러 – “난 사람이다. 기계 아님. 눈물도 난다.”
+
+9~16점 : 💼 눈치형 이성인 – “논리도 감정도 챙기느라 과부하”
+
+17~21점 : 🧠 팩트 우선 인간 – “친구보다 엑셀이 편함”
+
+22~24점 : 🧊 냉혈한 로직봇 – “감정은 통계로 치환되는 오류입니다”
+     */
+    info: {
+      mainTitle: "너 T야?",
+      subTitle: "MBTI T 성향 측정기. 나의 T 성향은 어느정도일까?",
+      mainUrl: "areYouT",
+      scoreType: "MBTI",
+      //mainImage: "https://images.testkoko.com/intro/areYouT/areYouT_intro_ko.avif",
+      //thumbImage: "https://images.testkoko.com/thumbnail/areYouT/areYouT_main_thumb_ko.avif",
+      mainImage: "https://images.testkoko.com/intro/attack_of_titan_mbti/titan_intro_ko.avif",
+      thumbImage: "https://images.testkoko.com/thumbnail/attack_of_titan_mbti/titan_main_thumb_ko.avif",
+      lang: "Kor",
+      category: "characteristic",
+      locale: "ko_KR",
+      creator: "테스트코코",
+      keywords: "MBTI 테스트,심리테스트,테스트코코,ESTJ,ESTP,ESFJ,ESFP,ENTJ,ENTP,ENFJ,ENFP,ISTJ,ISTP,ISFJ,ISFP,INTJ,INTP,INFJ,INFP"
+    },
+    questions: [
+      {
+        which: "TF",
+        question: "1.나    이번 시험 1점차이로 떨어졌어. 너무 속상해ㅠ",
+        answers: [
+          {
+            score: 0,
+            content: "1점 차이로 떨어졌다고? 그건 온 우주가 ‘이번엔 쉬어’라고 말하는 거야. 너무 슬퍼하지마"
+          },
+          {
+            score: 1,
+            content: "슬프겠지만 우선 감정은 나중에 처리하고, 일단 1점 어딜 깎였는지 분석부터 하자."
+          },
+          {
+            score: 2,
+            content: "마음속으로 '1점 차이가 아닐거 같은데?'라고 생각한다."
+          }
+        ]
+      },
+      {
+        which: "TF",
+        question: "2. 나 우울해서 빵 샀어.",
+        answers: [
+          {
+            score: 0,
+            content: "빵을 사 먹음으로써 우울증이 해결되면 가성비 최고인데?"
+          },  
+          {
+            score: 1,
+            content: "빵은 우울을 해결하지 못해. 다만 혈당을 일시적으로 납득시킬 뿐이지."
+          },
+          {
+            score: 2,
+            content: "우울함을 빵으로 해결하는 건 컴퓨터 오류에 과자 부으면 고쳐질 거라는 믿음이랑 비슷해"
+          }
+        ]
+      },
+      {
+        which: "TF",
+        question: "3. 내가 힘든일이 있어서 친구가 '화이팅 해! 잘 될거야!!'라고 말한다",
+        answers: [
+          {
+            score: 0,
+            content: "실질적을 도움은 되지 않지만 말이라도 고맙다."
+          },
+          {
+            score: 1,
+            content: "화이팅으로 해결되면 전 세계에 우울증 있는 사람은 없을걸?라고 생각한다."
+          },
+          {
+            score: 2,
+            content: "나한테 ‘화이팅’ 하지 말고, 차라리 엑셀로 내 문제 정리해줘."
+          }
+        ]     
+      },
+      {
+        which: "TF",
+        question: "❓4. 친구가 연인과 헤어지고 혼자 술먹으면서 나한테 전화를 한다.",
+        answers: [
+          {
+            score: 0,
+            content: "나가기 귀찮지만 친구가 힘들어할까봐 같이 술먹으로 나간다."
+          },
+          {
+            score: 1,
+            content: "전화로 감정을 나누기 전에, 이별 사유를 표로 정리해봐. 문제는 구조에 있다."
+          },
+          {
+            score: 2,
+            content: "실연 감정은 일시적이지만 음주는 간과 신장에 장기적 데미지를 줘. 냉정하게 판단하자"
+          }
+        ]
+      },
+      {
+        which: "TF",
+        question: "5.나 머리색 바꿨어. 어때??",
+        answers: [
+          {
+            score: 0, 
+            content: "뭐야?? 갑자기 무슨일 있는거야?"
+          },
+          {
+            score: 1,
+            content: "머리색이 바뀌었다고 인생의 효율이 올라가는 건 아니지만… 실험 정신은 인정."
+          },
+          {
+            score: 2,
+            content: "데이터 없이는 판단 불가. 전과 후 사진, RGB 값, 주변 반응 표본조사 제출 바람."
+          }
+        ]
+      },
+      {
+        which: "TF",
+        question: "❓6. 내일까지 숙제를 해야하는데 지금 너무 졸려... 어떡하지?",
+        answers: [
+          {
+            score: 0, 
+            content: "지금 잘 거면 최소 REM 수면 도달 시간이라도 고려하고 자는게 좋지 않을까?"
+          },
+          {
+            score: 1,
+            content: "졸린 건 생물학적 오류고, 과제 미완은 시스템 실패야. 뭐가 더 치명적인지 계산해봐."
+          },    
+          {
+            score: 2,
+            content: "이성 회로 고장났나? 리부트 하자"
+          }
+        ]
+      },  
+      {
+        which: "TF",
+        question: "❓7. 감동적인 드라마 결말을 본 뒤",
+        answers: [
+          {
+            score: 0,
+            content: "드라마 기승전결 완성도는 높았지만, 감정선은 과하게 투자됐어"
+          },
+          {
+            score: 1,
+            content: "나는 눈물 안 났어. 다만 논리적 허점에 마음이 아팠을 뿐"
+          },
+          {
+            score: 2,
+            content: "감동? 그건 뇌에서 나오는 일시적 화학 반응이야. 넷플릭스한테 정서 조종 당한 거지."
+          }
+        ]
+      },
+    ]
+  }
 ];
 
 // mbti.com

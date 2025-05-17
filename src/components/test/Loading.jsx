@@ -47,7 +47,7 @@ function Loading({mbtiScore, currentTest}) {
   },[mbtiScore, currentTest])
 
   //이탈률이 적은 로딩 시간 -> 3.7초
-  const loadingTime = 3700; //ms
+  const loadingTime = 4000; //ms
   useEffect(()=>{
     //resultPage로 보내는 작업
     let timeOut = setTimeout(() => {

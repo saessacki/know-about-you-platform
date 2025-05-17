@@ -31,13 +31,20 @@ const shimmerAnimation = keyframes`
 const ButtonContainer = styled.div`
   margin: 1.5rem 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 1rem;
+  box-sizing: border-box;
 `;
 
 const StyledLink = styled(Link)`
   text-decoration: none;
   display: block;
+  width: 100%;
+  max-width: 500px;
 `;
 
 const StyledButton = styled.button`
@@ -50,8 +57,9 @@ const StyledButton = styled.button`
     #ff4081
   );
   background-size: 200% auto;
+  width: 100%;
+  max-width: 500px;
   min-width: 14rem;
-  width: auto;
   padding: 1rem 2rem;
   font-size: 1.3rem;
   color: white;
@@ -67,6 +75,11 @@ const StyledButton = styled.button`
   line-height: 1.4;
   word-break: keep-all;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  height: 4.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 
   &::before {
     content: '';
@@ -108,6 +121,7 @@ const StyledButton = styled.button`
     font-size: 1.1rem;
     padding: 0.8rem 1.5rem;
     margin: 0 1rem;
+    height: 4rem;
     background: linear-gradient(
       45deg,
       #ff4081,
@@ -115,9 +129,14 @@ const StyledButton = styled.button`
       #ff4081
     );
   }
+
+  span {
+    vertical-align: middle;
+  }
 `;
 
 function BlogButton({testParam, lang}) {
+
   const foreignTextsObject = {
     Kor: {
       btnText: "더 자세한 결과 보러가기",

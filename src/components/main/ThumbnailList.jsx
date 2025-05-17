@@ -117,7 +117,7 @@ const ThumbnailItem = styled.div`
   }
 `;
 
-function ThumbnailList({lang}){
+function ThumbnailList(){
     const [searchParams, setSearchParams] = useSearchParams();
     const [testList, setTestList] = useState(TESTS);
 
@@ -125,17 +125,23 @@ function ThumbnailList({lang}){
         const currentLanguage = searchParams.get("lang") || 'Kor';
         const currentCategory = searchParams.get("cat");
         if(currentCategory){
+            console.log(1);
+            console.log(TESTS);
             const filteredTests = TESTS.filter((test) => (
                 test?.info?.lang === currentLanguage && test?.info?.category === currentCategory
             ))
             setTestList(filteredTests);
         } else {
+            console.log(2);
+            console.log(TESTS);
             const filteredTests = TESTS.filter(
                 (test) => test?.info?.lang === currentLanguage
             );
             setTestList(filteredTests);
         }        
     },[searchParams])
+
+    console.log('testList',testList);
 
     const onBackToTopButtonClick = () => {
         eventSenderGA("BackToTop","BackToTopButton","MainPage");

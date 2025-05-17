@@ -15,6 +15,11 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     position: relative;
     -webkit-overflow-scrolling: touch;
+    font-size: 16px;
+    
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   body {
@@ -63,6 +68,42 @@ const GlobalStyle = createGlobalStyle`
   /* iOS 모멘텀 스크롤 활성화 */
   * {
     -webkit-overflow-scrolling: touch;
+  }
+
+  /* 터치 타겟 사이즈 최적화 */
+  button, a, input, select {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* 모바일 폰트 최적화 */
+  @media (max-width: 768px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.3rem; }
+    h4 { font-size: 1.2rem; }
+    h5 { font-size: 1.1rem; }
+    h6 { font-size: 1rem; }
+    p { font-size: 1rem; }
+  }
+
+  /* 스크롤바 최적화 */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
 `;
 

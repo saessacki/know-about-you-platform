@@ -56,17 +56,6 @@
   z-index: 2;
 }
 
-.optionButton:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 
-    0 8px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
-}
-
-.optionButton:hover::before {
-  opacity: 0.1;
-}
 
 .optionButton:active {
   transform: translateY(1px) scale(0.98);

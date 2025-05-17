@@ -82,6 +82,7 @@ function TestResult(){
             <ContentSection>
                 <BlogButton
                     testParam={testParam}
+                    resultParam={resultParam}
                     lang={renderTestInfo?.info?.lang}
                 />
             </ContentSection>
